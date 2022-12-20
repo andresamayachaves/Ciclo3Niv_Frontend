@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="./styles/YourFarm.css">
+    </head>
+    <body>
+        <br>
+        <h1> YourFarm.com </h1>
+        <h2> _________________________________________ </h2> 
+        <h2>  FARM SERVICES INFO MANAGEMENT SYSTEM </h2><br><br>
+        <div id = "heading">
+            <button id="createBtn" onclick="createFarmButton()"> CREATE FARM </button>
+            <button id="deleteBtn" onclick="viewDelFarm()"> DELETE FARM </button><br><br>
+        </div>
+        <div>
+            <br><br>
+            <i id="emptiness">No farms yet. Let's create one!<br></i>
+            <div class="main-part" id="cards"></div>
+        </div>        
+        <br><br>
+
+        <button class ="pager" onclick="backPageFarm()"> << </button>
+        <button class ="pager" onclick="forwardPageFarm()">>></button> <br>
+        <p id="pager"></p>
+        <h2> ___________________________________________________________________ </h2> <br><br>
+        <i id="message1"></i><br><br>        
+        <p id="preBox1" class="left">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+                    &emsp;&emsp;&emsp;| Farm's name:&emsp;
+                <input id="input-line1" class='form-control' type="text" placeholder="Write..."></input>
+        </p>
+        <p id="preBox2" class="left">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+            &emsp;&emsp;&emsp;| Client: &emsp;&emsp;&emsp;&emsp;&emsp;
+            <input id="input-line2" class='form-control' type="text" placeholder="Write..."></input>            
+        </p><br><br>
+        
+        <button id="createBtnBlw" onclick="createFarm()"> CREATE </button>
+        <button id="cancelBtnBlw" onclick="cancelCreate()"> FINISH </button><br><br>
+        <i id="message2">Press 'Messages' in the available farms to Create, Show, Update or Delete its messages.</i><br><br>
+        <i id="message3">Test, test, test. You can create a new farm or delete an exsiting one with the buttons above.</i><br><br><br>
+        <script type="module" src="./YourFarm.js">
+        </script>   
+    </body>
+</html>

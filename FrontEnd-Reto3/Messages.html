@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/YourFarm.css">
+    </head>
+    <body>
+        <br>
+        <h1> YOUR FARM </h1>
+        <h2> _____________________________________ </h2> 
+        <h2 id='editBtn' VOID FARM INFO </h2><br><br>
+        <button onclick="editFarmInfo()"> EDIT FARM INFORMATION &emsp;</button> 
+        <button id='deleteBtn' onclick="deleteFarm()"> DELETE THIS FARM </button>
+        <body>
+            <div class="cards"></div>
+        </body>
+        
+        <br><br>
+
+        <a href="./YourFarm.html"> <button class="back">BACK TO MAIN MENU </button></a> <br><br>
+        <h2> ------------------------------------- </h2> 
+        <h2 class="blue"> MESSAGES </h2> 
+        <br>
+        <div id="MiddleSection" class="row">
+        </div>
+        <br><br><br>
+        <button class="msg" onclick="showDelButtons()"> Delete a message </button> 
+        <div id="delmess"></div>
+        
+        <i class="left">.......Author.....|..............Message...............</i><br>        
+        <i class="left">================================================</i><br> 
+        <i id="aut1" class="left">.------------</i> <i id="message1" class="left"> |----------------------------------</i><br>
+        <i id="aut2" class="left">.------------</i> <i id="message2" class="left"> |----------------------------------</i><br>
+        <i id="aut3" class="left">.------------</i> <i id="message3" class="left"> |----------------------------------</i><br>
+        <i id="aut4" class="left">.------------</i> <i id="message4" class="left"> |----------------------------------</i><br>
+        <i id="aut5" class="left">.------------</i> <i id="message5" class="left"> |----------------------------------</i><br>
+        <i id="aut6" class="left">.------------</i> <i id="message6" class="left"> |----------------------------------</i><br>
+        <i id="aut7" class="left">.------------</i> <i id="message7" class="left"> |----------------------------------</i><br>
+        <i id="aut8" class="left">.------------</i> <i id="message8" class="left"> |----------------------------------</i><br>
+        <i id="aut9" class="left">.------------</i> <i id="message9" class="left"> |----------------------------------</i><br>
+        <i id="aut10"class="left">.------------</i> <i id="message10"class="left"> |----------------------------------</i><br>
+        <i id="pager">(Page 1 of 1)</i><br><br>
+        <button id="back" class="pager" onclick="previousMessagesPage()"><<</button> 
+        <button id="forward"class="pager" onclick="nextMessagesPage()">>></button> 
+    
+        <script defer src="./js/Messages.js"></script>   
+    </body>
+</html>
